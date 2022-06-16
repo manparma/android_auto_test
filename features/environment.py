@@ -5,9 +5,10 @@ from appium import webdriver
 from selenium.webdriver.common import desired_capabilities
 
 
-def before_feature(context):
-    print(context.__dict__)
-    context.driver.install_app('/manishparmar/PycharmProjects/android_auto_test/data/app/hGn899QrHN_Test.apk');
+def before_feature(context, feature):
+
+    # print(context.__dict__)
+    # context.driver.install_app('/manishparmar/PycharmProjects/android_auto_test/data/app/hGn899QrHN_Test.apk');
 
     # targetapp = context.config.userdata["app"]
     # app = os.path.join(os.path.dirname(__file__),
